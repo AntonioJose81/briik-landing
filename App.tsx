@@ -31,7 +31,7 @@ function App() {
 
   return (
     <div className="App overflow-x-hidden">
-      <Navbar onNavigateHome={navigateToHome} />
+      <Navbar onNavigateHome={navigateToHome} onNavigateToStory={navigateToStory} />
       <main>
         {currentView === 'home' ? (
           <>

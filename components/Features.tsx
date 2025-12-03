@@ -16,7 +16,7 @@ const Features: React.FC = () => {
                     <ScrollReveal className="relative group">
                         <div className="relative overflow-hidden rounded-3xl shadow-xl">
                             <img
-                                src="/images/2.png"
+                                src="/images/2.jpg"
                                 alt="Niño bebiendo tranquilo con Briik"
                                 className="w-full h-auto group-hover:scale-[1.02] transition-transform duration-500"
                             />

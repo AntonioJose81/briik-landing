@@ -129,7 +129,7 @@ const Distributors: React.FC = () => {
                     <ScrollReveal className="relative order-1 md:order-2" delay={200}>
                         <div className="relative overflow-hidden rounded-3xl shadow-2xl border-4 border-white transform rotate-2 hover:rotate-0 transition-transform duration-500">
                             <img
-                                src="/images/distributor-display-minimal.png"
+                                src="/images/distributor-display-minimal.jpeg"
                                 alt="Expositor minimalista de BRIIK"
                                 className="w-full h-auto object-cover"
                             />

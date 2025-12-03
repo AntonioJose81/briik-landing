@@ -4,12 +4,12 @@ import ScrollReveal from './ScrollReveal';
 const Hero: React.FC = () => {
     const scrollToPreorder = () => {
         const element = document.getElementById('preorder-area');
-        if(element) element.scrollIntoView({ behavior: 'smooth' });
+        if (element) element.scrollIntoView({ behavior: 'smooth' });
     };
 
     const scrollToHowItWorks = () => {
         const element = document.getElementById('como-funciona');
-        if(element) element.scrollIntoView({ behavior: 'smooth' });
+        if (element) element.scrollIntoView({ behavior: 'smooth' });
     };
 
     return (
@@ -20,7 +20,7 @@ const Hero: React.FC = () => {
 
             <div className="container mx-auto px-6 relative z-10">
                 <div className="flex flex-col lg:flex-row items-center gap-12">
-                    
+
                     {/* Text */}
                     <ScrollReveal className="lg:w-1/2 text-center lg:text-left">
                         <span className="inline-block py-1 px-3 rounded-full bg-blue-100 text-brand-blue font-bold text-sm mb-4">
@@ -35,7 +35,7 @@ const Hero: React.FC = () => {
                         <p className="text-xl text-gray-600 mb-8 leading-relaxed">
                             El primer portabrick impreso en 3D, biodegradable y con asas ergonómicas. Evita los "estrujones" accidentales y haz que beber sea divertido.
                         </p>
-                        
+
                         <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
                             <button onClick={scrollToPreorder} className="bg-brand-blue hover:bg-blue-600 text-white font-heading font-bold text-lg py-4 px-8 rounded-2xl shadow-xl transform hover:-translate-y-1 transition-all flex items-center justify-center gap-2">
                                 <span>Reserva el tuyo</span>
@@ -60,12 +60,12 @@ const Hero: React.FC = () => {
                     {/* Image */}
                     <ScrollReveal delay={200} className="lg:w-1/2 relative">
                         <div className="relative z-10 animate-float">
-                            <img 
-                                src="/images/1.png" 
-                                alt="Colección de portabricks de colores" 
+                            <img
+                                src="/images/1.jpg"
+                                alt="Colección de portabricks de colores"
                                 className="w-full rounded-3xl shadow-2xl border-4 border-white rotate-2 hover:rotate-0 transition-all duration-500 object-cover"
                             />
-                            
+
                             {/* Floating Badge */}
                             <div className="absolute -bottom-6 -left-6 bg-white p-4 rounded-xl shadow-lg border-l-4 border-brand-green hidden md:block animate-bounce" style={{ animationDuration: '3s' }}>
                                 <div className="flex items-center gap-3">

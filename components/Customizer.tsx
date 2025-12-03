@@ -3,11 +3,11 @@ import ScrollReveal from './ScrollReveal';
 import { ProductColor } from '../types';
 
 const COLORS: ProductColor[] = [
-    { id: 'green', name: 'Verde Intenso', hex: '#22c55e', className: 'bg-green-500', borderColorClass: 'border-green-500', ringColorClass: 'ring-green-200', imageSrc: '/images/6.png' },
-    { id: 'pink', name: 'Rosa Pastel', hex: '#f9a8d4', className: 'bg-pink-300', borderColorClass: 'border-pink-300', ringColorClass: 'ring-pink-200', imageSrc: '/images/6.png' },
-    { id: 'blue', name: 'Azul Turquesa', hex: '#22d3ee', className: 'bg-cyan-400', borderColorClass: 'border-cyan-400', ringColorClass: 'ring-cyan-200', imageSrc: '/images/6.png' },
-    { id: 'black', name: 'Negro Noche', hex: '#111827', className: 'bg-gray-900', borderColorClass: 'border-gray-900', ringColorClass: 'ring-gray-400', imageSrc: '/images/6.png' },
-    { id: 'red', name: 'Rojo Fuego', hex: '#ef4444', className: 'bg-red-500', borderColorClass: 'border-red-500', ringColorClass: 'ring-red-200', imageSrc: '/images/6.png' },
+    { id: 'green', name: 'Verde Intenso', hex: '#22c55e', className: 'bg-green-500', borderColorClass: 'border-green-500', ringColorClass: 'ring-green-200', imageSrc: '/images/6.jpg' },
+    { id: 'pink', name: 'Rosa Pastel', hex: '#f9a8d4', className: 'bg-pink-300', borderColorClass: 'border-pink-300', ringColorClass: 'ring-pink-200', imageSrc: '/images/6.jpg' },
+    { id: 'blue', name: 'Azul Turquesa', hex: '#22d3ee', className: 'bg-cyan-400', borderColorClass: 'border-cyan-400', ringColorClass: 'ring-cyan-200', imageSrc: '/images/6.jpg' },
+    { id: 'black', name: 'Negro Noche', hex: '#111827', className: 'bg-gray-900', borderColorClass: 'border-gray-900', ringColorClass: 'ring-gray-400', imageSrc: '/images/6.jpg' },
+    { id: 'red', name: 'Rojo Fuego', hex: '#ef4444', className: 'bg-red-500', borderColorClass: 'border-red-500', ringColorClass: 'ring-red-200', imageSrc: '/images/6.jpg' },
 ];
 
 const Customizer: React.FC = () => {
@@ -42,7 +42,7 @@ const Customizer: React.FC = () => {
                             {/* Overlay simulating product color on image if we had transparent PNGs. For now, we use different picsum images and border color */}
                             <div className={`relative overflow-hidden rounded-2xl shadow-xl border-4 border-white transition-all duration-300`}>
                                 <img
-                                    src="/images/6.png"
+                                    src="/images/6.jpg"
                                     alt="Preview Personalizada"
                                     className={`w-full h-auto object-cover aspect-[4/3] transform transition-all duration-300`}
                                 />

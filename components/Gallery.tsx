@@ -14,7 +14,7 @@ const Gallery: React.FC = () => {
                     {/* Item Grande 1 */}
                     <ScrollReveal className="md:col-span-2 md:row-span-2 relative rounded-3xl overflow-hidden shadow-lg group h-96 md:h-full">
                         <img
-                            src="/images/3.png"
+                            src="/images/3.jpg"
                             alt="Diseño Verde"
                             className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                         />
@@ -27,7 +27,7 @@ const Gallery: React.FC = () => {
                     {/* Item Pequeño 1 */}
                     <ScrollReveal delay={100} className="relative rounded-3xl overflow-hidden shadow-lg group h-64 md:h-full">
                         <img
-                            src="/images/4.png"
+                            src="/images/4.jpg"
                             alt="Varios colores"
                             className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                         />
@@ -37,7 +37,7 @@ const Gallery: React.FC = () => {
                     {/* Item Pequeño 2 */}
                     <ScrollReveal delay={200} className="relative rounded-3xl overflow-hidden shadow-lg group h-64 md:h-full">
                         <img
-                            src="/images/5.png"
+                            src="/images/5.jpg"
                             alt="Detalle amarillo y rojo"
                             className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                         />

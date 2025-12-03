@@ -2,9 +2,10 @@ import React, { useState, useEffect } from 'react';
 
 interface NavbarProps {
     onNavigateHome?: () => void;
+    onNavigateToStory?: () => void;
 }
 
-const Navbar: React.FC<NavbarProps> = ({ onNavigateHome }) => {
+const Navbar: React.FC<NavbarProps> = ({ onNavigateHome, onNavigateToStory }) => {
     const [scrolled, setScrolled] = useState(false);
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
@@ -41,6 +42,13 @@ const Navbar: React.FC<NavbarProps> = ({ onNavigateHome }) => {
         if (onNavigateHome) onNavigateHome();
     };
 
+    const handleStoryClick = () => {
+        if (onNavigateToStory) {
+            onNavigateToStory();
+            setMobileMenuOpen(false);
+        }
+    };
+
     return (
         <nav className={`fixed w-full z-50 transition-all duration-300 ${scrolled ? 'bg-white/95 backdrop-blur-md shadow-md py-2' : 'bg-transparent py-4'
             }`}>
@@ -51,6 +59,7 @@ const Navbar: React.FC<NavbarProps> = ({ onNavigateHome }) => {
 
                 {/* Desktop Menu */}
                 <div className="hidden md:flex items-center space-x-8 font-bold text-gray-600">
+                    <button onClick={handleStoryClick} className="hover:text-brand-pink transition-colors">Así nació Briik</button>
                     <button onClick={() => scrollToSection('ventajas')} className="hover:text-brand-pink transition-colors">Ventajas</button>
                     <button onClick={() => scrollToSection('galeria')} className="hover:text-brand-pink transition-colors">Galería</button>
                     <button onClick={() => scrollToSection('personalizar')} className="hover:text-brand-pink transition-colors">Personalízalo</button>
@@ -75,6 +84,7 @@ const Navbar: React.FC<NavbarProps> = ({ onNavigateHome }) => {
             {/* Mobile Menu Dropdown */}
             {mobileMenuOpen && (
                 <div className="md:hidden absolute top-full left-0 w-full bg-white shadow-lg py-4 flex flex-col items-center space-y-4 font-bold text-gray-600 border-t border-gray-100">
+                    <button onClick={handleStoryClick} className="hover:text-brand-pink">Así nació Briik</button>
                     <button onClick={() => scrollToSection('ventajas')} className="hover:text-brand-pink">Ventajas</button>
                     <button onClick={() => scrollToSection('galeria')} className="hover:text-brand-pink">Galería</button>
                     <button onClick={() => scrollToSection('personalizar')} className="hover:text-brand-pink">Personalízalo</button>
