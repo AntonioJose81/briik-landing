@@ -59,10 +59,10 @@ const Navbar: React.FC<NavbarProps> = ({ onNavigateHome, onNavigateToStory }) =>
 
                 {/* Desktop Menu */}
                 <div className="hidden md:flex items-center space-x-8 font-bold text-gray-600">
-                    <button onClick={handleStoryClick} className="hover:text-brand-pink transition-colors">Así nació Briik</button>
                     <button onClick={() => scrollToSection('ventajas')} className="hover:text-brand-pink transition-colors">Ventajas</button>
                     <button onClick={() => scrollToSection('galeria')} className="hover:text-brand-pink transition-colors">Galería</button>
                     <button onClick={() => scrollToSection('personalizar')} className="hover:text-brand-pink transition-colors">Personalízalo</button>
+                    <button onClick={handleStoryClick} className="hover:text-brand-pink transition-colors">Así nació Briik</button>
                 </div>
 
                 <button
@@ -84,10 +84,10 @@ const Navbar: React.FC<NavbarProps> = ({ onNavigateHome, onNavigateToStory }) =>
             {/* Mobile Menu Dropdown */}
             {mobileMenuOpen && (
                 <div className="md:hidden absolute top-full left-0 w-full bg-white shadow-lg py-4 flex flex-col items-center space-y-4 font-bold text-gray-600 border-t border-gray-100">
-                    <button onClick={handleStoryClick} className="hover:text-brand-pink">Así nació Briik</button>
                     <button onClick={() => scrollToSection('ventajas')} className="hover:text-brand-pink">Ventajas</button>
                     <button onClick={() => scrollToSection('galeria')} className="hover:text-brand-pink">Galería</button>
                     <button onClick={() => scrollToSection('personalizar')} className="hover:text-brand-pink">Personalízalo</button>
+                    <button onClick={handleStoryClick} className="hover:text-brand-pink">Así nació Briik</button>
                     <button
                         onClick={() => scrollToSection('preorder-area')}
                         className="bg-brand-pink text-white py-2 px-6 rounded-full shadow-md w-3/4"
