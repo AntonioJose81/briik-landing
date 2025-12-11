@@ -46,7 +46,7 @@ const Footer: React.FC<FooterProps> = ({ onOpenPrivacyPolicy, onNavigateToStory 
                     Únete a la revolución Briik y haz que tus hijos beban su zumo con estilo y seguridad.
                 </p>
 
-                <div id="preorder-area" className="bg-white/10 backdrop-blur-md p-8 rounded-3xl max-w-lg mx-auto border border-white/20">
+                <div className="bg-white/10 backdrop-blur-md p-8 rounded-3xl max-w-lg mx-auto border border-white/20">
                     <h3 className="text-2xl font-bold mb-4">🚀 ¡Lanzamiento Inminente!</h3>
                     <p className="mb-6 text-blue-100">
                         Nuestra tienda online está a punto de abrir. Déjanos tu email y consigue un <span className="text-brand-yellow font-bold">20% de DESCUENTO</span> en tu primer pedido.

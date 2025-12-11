@@ -28,20 +28,26 @@ const Gallery: React.FC = () => {
                     <ScrollReveal delay={100} className="relative rounded-3xl overflow-hidden shadow-lg group h-64 md:h-full">
                         <img
                             src="/images/4.jpg"
-                            alt="Varios colores"
+                            alt="Spiderman"
                             className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                         />
-                        <div className="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors"></div>
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex flex-col justify-end p-8">
+                            <h3 className="text-white text-3xl font-heading font-bold mb-2">Héroe Araña</h3>
+                            <p className="text-white/90">Tu amigo y vecino.</p>
+                        </div>
                     </ScrollReveal>
 
                     {/* Item Pequeño 2 */}
                     <ScrollReveal delay={200} className="relative rounded-3xl overflow-hidden shadow-lg group h-64 md:h-full">
                         <img
                             src="/images/5.jpg"
-                            alt="Detalle amarillo y rojo"
+                            alt="Batman"
                             className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                         />
-
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex flex-col justify-end p-8">
+                            <h3 className="text-white text-3xl font-heading font-bold mb-2">Héroe Murciélago</h3>
+                            <p className="text-white/90">El caballero oscuro.</p>
+                        </div>
                     </ScrollReveal>
 
                 </div>

@@ -1,15 +1,35 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Briik | El Portabricks Antiderrames</title>
-    
+    <link rel="icon" type="image/png" href="/favicon.png">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://briik.es/">
+    <meta property="og:title" content="Briik | El Portabricks Antiderrames">
+    <meta property="og:description"
+        content="¡Tu Peque, Su Zumo, Sin Manchas! El primer portabrick impreso en 3D, biodegradable y con asas ergonómicas.">
+    <meta property="og:image" content="/thumbnail.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://briik.es/">
+    <meta property="twitter:title" content="Briik | El Portabricks Antiderrames">
+    <meta property="twitter:description"
+        content="¡Tu Peque, Su Zumo, Sin Manchas! El primer portabrick impreso en 3D, biodegradable y con asas ergonómicas.">
+    <meta property="twitter:image" content="/thumbnail.jpg">
+
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;600;700&family=Nunito:wght@400;600;800&display=swap" rel="stylesheet">
-    
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;600;700&family=Nunito:wght@400;600;800&display=swap"
+        rel="stylesheet">
+
     <!-- Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
@@ -56,13 +76,13 @@
             }
         }
     </script>
-    
+
     <style>
         body {
             font-family: 'Nunito', sans-serif;
             overflow-x: hidden;
         }
-        
+
         .clip-wave {
             clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 100%, 0 85%);
         }
@@ -71,13 +91,16 @@
         ::-webkit-scrollbar {
             width: 10px;
         }
+
         ::-webkit-scrollbar-track {
             background: #f1f1f1;
         }
+
         ::-webkit-scrollbar-thumb {
             background: #FBBF24;
             border-radius: 5px;
         }
+
         ::-webkit-scrollbar-thumb:hover {
             background: #F59E0B;
         }
@@ -87,17 +110,18 @@
                 opacity: 0;
                 transform: translate3d(0, 100%, 0);
             }
+
             to {
                 opacity: 1;
                 transform: translate3d(0, 0, 0);
             }
         }
-        
+
         .animate-fade-in-up {
             animation: fadeInUp 0.5s ease-out forwards;
         }
     </style>
-<script type="importmap">
+    <script type="importmap">
 {
   "imports": {
     "react": "https://aistudiocdn.com/react@^19.2.0",
@@ -106,10 +130,12 @@
   }
 }
 </script>
-<link rel="stylesheet" href="/index.css">
+    <link rel="stylesheet" href="/index.css">
 </head>
+
 <body class="bg-gray-50 text-gray-800 antialiased">
     <div id="root"></div>
-<script type="module" src="/index.tsx"></script>
+    <script type="module" src="/index.tsx"></script>
 </body>
+
 </html>

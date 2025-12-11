@@ -4,7 +4,7 @@ import Hero from './components/Hero';
 import Marquee from './components/Marquee';
 import Features from './components/Features';
 import Gallery from './components/Gallery';
-import Customizer from './components/Customizer';
+import Customizer from './components/CustomizerV2';
 import Distributors from './components/Distributors';
 import Footer from './components/Footer';
 import CookieConsent from './components/CookieConsent';
